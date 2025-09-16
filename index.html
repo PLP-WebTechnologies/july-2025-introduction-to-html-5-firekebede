@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Metadata -->
+  <title>Accessible & SEO-Friendly HTML5 Webpage</title>
+  <meta name="description" content="A simple HTML5 web page demonstrating semantic structure, accessibility best practices, and beginner SEO principles.">
+  <meta name="keywords" content="HTML5, Accessibility, SEO, Semantic HTML, Web Development Basics">
+  <meta name="author" content="Your Name">
+
+</head>
+<body>
+  <!-- Accessible and SEO-friendly structure -->
+
+  <header role="banner">
+    <h1>Welcome to My Accessible HTML5 Page</h1>
+    <p>A demonstration of semantic structure, accessibility, and SEO basics.</p>
+
+    <!-- Navigation landmark -->
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about" title="Learn about this page">About</a></li>
+        <li><a href="#articles" title="Read sample articles">Articles</a></li>
+        <li><a href="#contact" title="Get in touch with me">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content landmark -->
+  <main id="main-content" role="main">
+    <!-- About Section -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p>
+        This web page is built using <strong>semantic HTML5 tags</strong>. 
+        It is designed with <em>accessibility</em> in mind so that screen readers 
+        and assistive technologies can navigate it easily. 
+        It also follows beginner-friendly <abbr title="Search Engine Optimization">SEO</abbr> principles 
+        for better discoverability on search engines.
+      </p>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" aria-labelledby="articles-heading">
+      <h2 id="articles-heading">Sample Articles</h2>
+      
+      <article aria-labelledby="article1-title">
+        <h3 id="article1-title">The Importance of Semantic HTML</h3>
+        <p>
+          Semantic HTML gives meaning to your content, making it easier for both 
+          users and search engines to understand the structure of your page. 
+          Using elements like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> 
+          improves accessibility and SEO ranking.
+        </p>
+      </article>
+
+      <article aria-labelledby="article2-title">
+        <h3 id="article2-title">Accessibility Best Practices</h3>
+        <p>
+          Accessible web design ensures inclusivity. Using descriptive link text, 
+          proper heading hierarchy, and ARIA attributes where needed helps users 
+          with disabilities navigate your content effectively.
+        </p>
+      </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <p>If you’d like to get in touch, feel free to <a href="mailto:example@email.com">send me an email</a>.</p>
+
+      <form aria-label="Contact form">
+        <fieldset>
+          <legend>Send a Message</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" aria-required="true" required>
+
+          <br><br>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" aria-required="true" required></textarea>
+
+          <br><br>
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer landmark -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 firehiwotK. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="#main-content">Back to Top</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
